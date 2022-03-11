@@ -25,7 +25,7 @@ except :
 
 # app=Flask(__name__)
 model=pickle.load(open('models/logistic_new1.pkl','rb'))
-@app.route('/',methods=['GET','POST'])
+@app.route('/')
 def home_page():
     return render_template('home.html')
 
